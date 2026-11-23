@@ -1,0 +1,47 @@
+{
+  "rows": 569,
+  "train_rows": 455,
+  "test_rows": 114,
+  "seed": 42,
+  "positive_class": "Malignant",
+  "cv_metric": "roc_auc",
+  "cv_train_only": {
+    "baseline": {
+      "mean": 0.5,
+      "std": 0.0
+    },
+    "logistic": {
+      "mean": 0.9957688338493291,
+      "std": 0.004665698474904977
+    },
+    "forest": {
+      "mean": 0.9883384932920537,
+      "std": 0.005834177100145485
+    }
+  },
+  "selected_model": "logistic",
+  "held_out": [
+    {
+      "model": "baseline",
+      "accuracy": 0.631578947368421,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "average_precision": 0.3684210526315789
+    },
+    {
+      "model": "logistic",
+      "accuracy": 0.9649122807017544,
+      "precision": 0.975,
+      "recall": 0.9285714285714286,
+      "f1": 0.9512195121951219,
+      "roc_auc": 0.996031746031746,
+      "average_precision": 0.994273631904294
+    }
+  ],
+  "class_counts": {
+    "0": 357,
+    "1": 212
+  }
+}
